@@ -48,7 +48,7 @@ def assign_points(votes, players, pull, approved):
   #assign points based on votes
   #206. When a proposed rule-change is defeated, the player who proposed it loses 10 points.
   current = pull['user']['login']
-  if not approved:
+  if not approved and current != "bulmaro":
     repository.add_points(current, -10)
   else:
     #201. A number between 0 and 10 for the first player, with the upper limit increasing by one each turn; more points are awarded for more popular proposals.
