@@ -8,7 +8,7 @@ def start_server(main=False):
 
 @app.route('/')
 def hello_world():
-  return "Kelpycreek and ignatiusbill win the game forever!!!!!"
+  return "Kelpycreek and ignatiusbill and z win the game forever!!!!!"
 
 if __name__ == '__main__':
   start_server(True)
