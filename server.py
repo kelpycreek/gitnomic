@@ -8,12 +8,7 @@ def start_server(main=False):
 
 @app.route('/')
 def hello_world():
-  return "Current player: " + repository.get_current_player()
-    
-@app.route('/score/<username>')
-def getScore(username):
-  print(username)
-  return str(repository.find_user(username)['points'])
+  return "Kelpycreek and ignatiusbill win the game forever!!!!!"
 
 if __name__ == '__main__':
   start_server(True)
